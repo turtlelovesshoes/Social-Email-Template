@@ -4,27 +4,48 @@
     <meta charset="utf-8">
     <title>template</title>
     <style>
+    @media screen and (-moz-windows-theme) {
+        body{
+            font-family:"Segoe UI","Fira Sans";
+        }
+    }
+
+    body[data-useragent*='Mac OS X'] {
+      font-family: "San Francisco", "Fira Sans",sans-serif;
+    }
+
+    body[data-useragent*='Mac OS X 10_10'] {
+      font-family: "San Francisco",
+    }
       #border{
         text-align:center;
         margin: 100px;
-        border: 5px solid black;
+        border: 2px solid #0f1126;
+        font-family:
+        border-radius:2px;
       }
       #title{
         padding:25px;
-        background-image:url("talkingfox.png");
+        background:url("talkingfox.png") no-repeat center;
+        opacity: .75;
+        background-color:  	#363959;
+        font-family: "Fira Sans";
       }
       #week,#community,#start,#metrics{
-        font-family: Arial;
-        border-top: 2px solid #00539F;
-        border-bottom:2px solid #00539F;
+        font-family:"Fira Sans";
+        border-top: 2px solid #0f1126;
+        border-bottom:2px solid #0f1126;
         background-color: #D4DDE4;
+      }
+      #recognition{
+        display: static;
       }
       h1{
         color: black;
         line-position: 0;
       }
       h2,h3{
-
+        color:#202340;
       }
       li{
         display: block;
@@ -89,6 +110,7 @@
 
   <div id ="start">
       <h2>Get started with Social Again - An Addon</h2>
+      <p><em>Has it been a while since you participated? That is ok, there is now an addon that has all of your resources in one place.</em></p>
       <ul>
         <li><a href="https://addons.mozilla.org/en-US/firefox/addon/social-helpers/"><img src="addon.png" height="300px" width="650px"/></a></li>
         <li>All the resources you need in your Firefox toolbar! By Jhonatas</li>
@@ -113,7 +135,7 @@
           <h4>What we don't know</h4>
             <table class="feb">
                 <tr>
-                  <td>No Action Taken Conversations</td>
+                  <td>No </br>Action Taken</td>
                   <td>Uncategorized</td>
                 </tr>
                 <tr class="num">
@@ -125,8 +147,8 @@
                 <p><em>Aside from english we support czech, dutch, french, spanish, portuguese, german, bengali, and some russian and japanse tweets.</em></p>
              <table class="feb">
                 <tr>
-                  <td>EN conversations</td>
-                  <td>All other languages</td>
+                  <td>EN </br>conversations</td>
+                  <td>All other </br>languages</td>
                 </tr>
                 <tr class="num">
                   <td>5519</td>
@@ -136,8 +158,8 @@
           <h4>How many are we?</h4>
               <table class="feb">
                 <tr>
-                  <td>Casual Contributors</td>
-                  <td>Reply Contributors</td>
+                  <td>Casual </br>Contributors</td>
+                  <td>Reply </br>Contributors</td>
                 </tr>
                 <tr class="num">
                   <td>27</td>
