@@ -19,19 +19,30 @@
         }
           #border{
             text-align:center;
-            margin: 5%;
             border: 2px solid #0f1126;
             font-family:
             border-radius:2px;
+
           }
           #title{
-            padding:25px;
             background:url("talkingfox.png") no-repeat center;
             opacity: .75;
             background-color:  	#363959;
             font-family: "Fira Sans";
+            background-size: contain;
+            overflow: none
+            width: 100%;
+            height: 400px;
+
           }
+          #flexborder{
+            display: flex;
+          }
+
           #engage,#recognition,#start,#metrics{
+            display: flex;
+            flex-direction: column;
+            flex-wrap:wrap;
             font-family:"Fira Sans";
             border-top: 2px solid #0f1126;
             border-bottom:2px solid #0f1126;
@@ -43,7 +54,8 @@
             line-position: 0;
           }
           h2,h3{
-            color:#202340;
+            color:white;
+            background-color: #363959;
           }
           #engage li{
             display: inherit;
@@ -96,16 +108,24 @@
   <div id="title"></div>
     <div id = "news">
       <h2>News from the Community</h2>
+
+      <div id="col">
         <h3>Social Support Meetings</h3>
         <p>Upcoming: Preview Firefox 60 Features with Mike Kaply and Roland!
+        <a href="https://air.mozilla.org/sumo-firefox-60-preview-with-mike-kaply-and-roland/">On Airmo</a><br>
         <a href="https://docs.google.com/document/d/1iz1xp2Iie4dvdy5WKC6aL8Nyx1tbLZE_6WQop4htTw8/edit#">Add Your Questions to the Agenda</a>
+      </div>
+
+      <div id = "col">
         <p>Rewatch: Firefox 59 Post Mortem</p>
         <a href="https://air.mozilla.org/sumo-community-meeting/">Rewatch the recorded stream</a>
+      </div>
     </div>
+
     <div id = "engage">
       <h2>Find Other Answers from the Community to Get Started</h2>
-      <a href="http://twubs.com/fxhelp">Check out the top Casual Contributors Using #fxhelp</a>
-      <a href="https://pastebin.mozilla.org/9083945"><img src="">Copy this pastebin text to your Tweetdeck in a new Search column</a>
+      <a href="http://twubs.com/fxhelp">Check out the answers of top Casual Contributors Using #fxhelp</a>
+      <br><a href="https://pastebin.mozilla.org/9083945"><img src="">Copy this pastebin text to your Tweetdeck in a new Search column</a>
       <h2>Are you interested in mentoring new Social Support Contributors?</h2>
       <p><a href="https://support.mozilla.org/en-US/forums/contributors/712988?last=73853">Introduce yourself to Tasukete in this forum post.</a></p>
       <h2>Are you new?</h2>
@@ -119,7 +139,7 @@ Right Now
       </ol>
 Centralized Community
       <ol>
-        <li><a href="https://discourse.mozilla.org/c/sumo">Discourse</a> and the <a href="https://support.mozilla.org/en-US/forums">Contributor Forms</a></li>
+        <li><a href="https://support.mozilla.org/en-US/forums">Contributor Forms</a></li>
         <li></li>
       </ol>
 Attention Support Career Building Seekers
@@ -138,7 +158,34 @@ Attention Support Career Building Seekers
       <h2>How would you describe the health of the community?</h2>
             <h4>What languages?</h4>
               <p><em>Aside from english we support czech, dutch, french, spanish, portuguese, german, bengali, and some russian and japanese tweets.</em></p>
-          
+              <table class="feb">
+                 <tr>
+                   <td>EN </br>conversations</td>
+                   <td>All other </br>languages</td>
+                 </tr>
+                 <tr class="num">
+                   <td>3789</td>
+                   <td>1911<td>
+                 </tr>
+               </table><br/>
+        <h3>How much did we support?</h3>
+          <table class="feb">
+              <tr>
+                <td>#fxhelp </td>
+                <td>Reply</td>
+                <td>"Help Me" </td>
+              </tr>
+              <tr class="num">
+                <td>144</td>
+                <td>427</td>
+                <td>766</td>
+              </tr>
+            </table></br>
+          </table><br/>
+
+
+
+
         <h4>How many are we?</h4>
         <p><em></em></p>
             <table class="feb">
@@ -156,3 +203,4 @@ Attention Support Career Building Seekers
 
   </body>
 </html>
+
