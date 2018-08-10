@@ -11,3 +11,6 @@ To use the template:
 Suggestions: 
 change the colors and heading image to match your logo for your community or locale. 
 Feel free to email guigs@mozilla.com, saturnsmoon64@gmail.com for further collaboration. 
+
+Note that there is a July repository that Yuli is helping with that can be found here: 
+https://github.com/turtlelovesshoes/SUMO_july
